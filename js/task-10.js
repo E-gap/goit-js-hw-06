@@ -35,8 +35,10 @@ const destroyBoxes = () => {
   const divs = boxes.querySelectorAll('div')
   
   for (const div of divs) {
-    div.remove();
+    div.remove();    
   }
+  array.splice(0, array.length);    
+  
 }
 
 destroyButton.addEventListener('click', destroyBoxes);
